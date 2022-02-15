@@ -1,0 +1,167 @@
+/** Mermaid Gantt **/
+
+gantt
+{
+  --mermaid--gantt-left-padding: 750px !important;
+}
+
+/* Section 1 */
+.section0,
+.section2 {
+    fill: LightCyan !important;
+}
+
+.section1,
+.section3{
+    fill: LightPink !important;
+}
+
+.sectionTitle {
+    fill: white !important;
+    font-size: 11px   !important;
+}
+
+.taskText0,
+.taskText1,
+.taskText2,
+.taskText3 {
+    fill: white !important;
+    font-size: 12px !important;
+}
+
+.task0 {
+    fill: darkmagenta !important;
+    stroke: white !important;
+    stroke-width: 1px !important;
+}
+
+.task1 {
+    fill: teal !important;
+    stroke: white !important;
+    stroke-width: 1px !important;
+}
+
+.task2 {
+    fill: midnightblue !important;
+    stroke: white !important;
+    stroke-width: 1px !important;
+}
+
+.task3 {
+    fill: maroon !important;
+    stroke: white !important;
+    stroke-width: 1px !important;
+}
+
+
+.activeText0,
+.activeText1,
+.activeText2,
+.activeText3 {
+  font-weight: bold !important;
+}
+
+.activeCrit0,
+.activeCrit1,
+.activeCrit2,
+.activeCrit3 {
+  stroke: $critBorderColor;
+  fill: $activeTaskBkgColor;
+  stroke-width: 3 !important;
+}
+
+.activeCritText0,
+.activeCritText1,
+.activeCritText2,
+.activeCritText3 {
+  font-weight: bold !important;
+}
+
+.done0,
+.done1,
+.done2,
+.done3 {
+  stroke: #339966 !important;
+  fill: #001a00 !important;
+  stroke-width: 3 !important;
+}
+
+.doneText0,
+.doneText1,
+.doneText2,
+.doneText3 {
+  font-style: italic !important;
+}
+
+.doneCrit0,
+.doneCrit1,
+.doneCrit2,
+.doneCrit3 {
+  stroke: yellow !important;
+  fill: #001a00 !important;
+  stroke-width: 2 !important;
+  cursor: pointer;
+  shape-rendering: crispEdges;
+}
+
+.doneCritText0,
+.doneCritText1,
+.doneCritText2,
+.doneCritText3 {
+  font-style: italic !important;
+}
+
+
+/* Milestone formatting  */
+
+.milestone {
+  transform: rotate(45deg) scale(0.9,0.9);
+  fill: greenyellow !important;
+  stroke: black !important;
+  stroke-width: 5 !important;
+}
+
+.milestoneText {
+  font-style: italic;
+  font-size: 10pt !important;
+  fill: black !important;
+  font-weight: bold !important;
+}
+
+
+/* Grid ticks */
+.tick line {
+    opacity: 0.8;
+    stroke-width: 2px;
+}
+
+.tick text {
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+/*
+prevent the box from extending past the page width,
+creating a scrollable window around only the diagram.
+*/
+.mermaid {
+  max-width: 100%;
+  overflow: scroll;
+  side-padding: 300px !important;
+}
+
+gantt {
+    sidePadding: 4000 !important;
+}
+
+/*
+Assume that the gantt chart will be made very short
+during scaling, so set a minimum height. Ensure that
+the width adjusts to compensate.
+*/
+.mermaid svg {
+  min-height:200px;
+  width: auto;
+}
+
+
