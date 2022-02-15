@@ -14,4 +14,4 @@ Installation is pretty simple:
 
 This is what the theme outputs in Obsidian:
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/P9k/obsidian-adjustments/blob/main/Gantt-Example.png?raw=true)
