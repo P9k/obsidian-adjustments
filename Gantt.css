@@ -1,10 +1,5 @@
 /** Mermaid Gantt **/
 
-gantt
-{
-  --mermaid--gantt-left-padding: 750px !important;
-}
-
 /* Section 1 */
 .section0,
 .section2 {
