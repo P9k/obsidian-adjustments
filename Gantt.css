@@ -1,11 +1,12 @@
 /** Mermaid Gantt **/
 
-/* Section 1 */
+/* Odd sections */
 .section0,
 .section2 {
     fill: LightCyan !important;
 }
 
+/* Even sections */
 .section1,
 .section3{
     fill: LightPink !important;
@@ -16,6 +17,7 @@
     font-size: 11px   !important;
 }
 
+/* Tasks */
 .taskText0,
 .taskText1,
 .taskText2,
@@ -48,6 +50,7 @@
     stroke-width: 1px !important;
 }
 
+/* Special tasks */
 
 .activeText0,
 .activeText1,
@@ -158,5 +161,3 @@ the width adjusts to compensate.
   min-height:200px;
   width: auto;
 }
-
-
